@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+   
+}
+html,body{
+    background-color: red;;
+}
+.main{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+}
+.left{
+   width: 35%;
+   height: 100vh;
+   background-color: red;
+}
+.right{
+
+    width: 65%;
+    height: 100vh;
+}
+.upper{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    /* background-color: #fff; */
+}
+.lower{
+    width: 100%;
+    height: 50%;
+    background-image: url(https://plus.unsplash.com/premium_photo-1709855536726-0ddd3516cafa?q=80&w=1944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    /* background-color: ; */
+    border: 1px solid black;
+}
+.upperleft{
+    border: 1px solid black;
+    width: 40%;
+    height: 50vh;
+   background-image: url(https://images.unsplash.com/photo-1729614499339-b98e60ff68d6?q=80&w=1793&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+   background-size: cover;
+   background-position: center;
+}
+.upperright{
+    border: 1px solid black;
+    width: 60%;
+    height: 50vh;
+    background-image: url(https://images.unsplash.com/photo-1721297013317-e4976cc284d9?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: cover;
+    background-size: cover;
+}
+.left{
+    text-align: center  ;
+}
+.left h1{
+    background-color: #fff;
+    margin-top: 30px;
+    color: red ;
+}
+.left p{
+    background-color: #fff;
+    font-size: 20px;
+    padding: 5px;
+    margin: 5rem;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.47);
+}
+.left button{
+    width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 17px;
+    margin: 10px;
+    transition: all .1s ease-in ;
+    &:hover{
+    width: 110px;
+padding: 6px;
+}
+}
+
+@media (max-width:500px) {
+    .main{
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .right{
+        width: 100%;
+    }
+}
+    </style>
+    <title>My website </title>
+</head>
+<body>
+<div class="main">
+    <div class="left">
+        <h1>For My Love</h1>
+        <p>चांद रोज़ छत पर आकर इतराता बहुत था,
+            कल रात मैंने भी उसे तेरी तस्वीर दिखा दी........!!!</p>
+            <p>Kya Tum mere sath chalna pasand karongi</p>
+            <button id="yes" onclick="btn1()">YES</button>
+            <button id="no"  onclick="btn2()">NO</button>
+    </div>
+    <div class="right">
+        <div class="upper">
+            <div class="upperleft"></div>
+            <div class="upperright"></div>
+        </div>
+        <div class="lower"></div>
+    </div>
+</div>
+<script>
+    
+function btn1(){
+    alert('Thank you my love');
+}
+function btn2(){
+    alert('You hurt my heart');
+}
+</script>
+</body>
+</html>
